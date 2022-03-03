@@ -1,0 +1,7 @@
+wget -O monero-gui.tar.bz2 https://downloads.getmonero.org/gui/linux64 &&
+tar -xf monero-gui.tar.bz2 &&
+mv monero*/* . &&
+rm monero-gui* LICENSE extras *.AppImage -rf &&
+mkdir monero &&
+mv monero* monero &&
+mv monero ~/.local/share/
